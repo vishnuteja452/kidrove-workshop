@@ -1,4 +1,3 @@
-import React from 'react';
 import { Calendar, Clock, MonitorPlay, Users, Banknote } from 'lucide-react';
 import { motion } from 'framer-motion';
 
