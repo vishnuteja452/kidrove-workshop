@@ -29,12 +29,7 @@ const RegistrationForm = () => {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     try {
-      // Determine API URL based on environment
-      const apiUrl = import.meta.env.VITE_API_URL 
-        ? `${import.meta.env.VITE_API_URL}/api/enquiry` 
-        : 'http://localhost:3000/api/enquiry';
-
-      const response = await fetch(apiUrl, {
+      const response = await fetch('/api/enquiry', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
